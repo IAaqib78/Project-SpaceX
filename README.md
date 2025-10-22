@@ -44,6 +44,48 @@ This project combines **real launch telemetry**, **API-sourced data**, and **mac
 | **Data Sources** | SpaceX REST API, Web Scraping (Wikipedia) |
 
 ---
+---
+
+ 
+
+The SpaceX Launch Success Prediction project leveraged a combination of **data engineering, visualization, and machine learning tools** to deliver robust predictive insights.
+
+<p align="center">
+  <!-- Python & Data Science -->
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=FFD43B" alt="Python" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Matplotlib-FF5733?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn" />
+</p>
+
+<p align="center">
+  <!-- ML & Modeling -->
+  <img src="https://img.shields.io/badge/Scikit-learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn" />
+  <img src="https://img.shields.io/badge/Logistic_Regression-00ffc6?style=for-the-badge&logoColor=black" alt="Logistic Regression" />
+  <img src="https://img.shields.io/badge/SVM-ff00ff?style=for-the-badge&logoColor=white" alt="SVM" />
+  <img src="https://img.shields.io/badge/Decision_Tree-00fff7?style=for-the-badge&logoColor=black" alt="Decision Tree" />
+  <img src="https://img.shields.io/badge/KNN-ff00ff?style=for-the-badge&logoColor=white" alt="KNN" />
+</p>
+
+<p align="center">
+  <!-- Dashboards & Visualization -->
+  <img src="https://img.shields.io/badge/Plotly-3F4CFF?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+  <img src="https://img.shields.io/badge/Folium-1DC9C9?style=for-the-badge&logoColor=white" alt="Folium" />
+  <img src="https://img.shields.io/badge/Jupyter-FF4300?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebook" />
+</p>
+
+<p align="center">
+  <!-- Others / Version Control -->
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
+</p>
+
+
+---
+
+
+
 
 ## 🧮 Core Algorithms
 

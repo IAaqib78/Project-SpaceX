@@ -99,10 +99,48 @@ Interactive Map Preview
 
 💸 Reusability models directly tied to SpaceX’s cost reduction strategy.
 
-💡 Key Takeaways
+💡 **Key Takeaways**
+
 
 Data analytics plays a strategic role in aerospace economics.
 
 Machine learning provides predictive reliability for reusability planning.
 
 Visualization enhances interpretability — bridging science and story.
+
+
+
+
+🧑‍🚀 Author
+<h3 align="center" style="color:#00E5FF;">👨‍🚀 Aakif Altaf</h3> <p align="center"> <b>Data Scientist | AI Innovator | IBM & Google Certified</b><br> BCA | MCA | Data Science (IBM) | Data Analytics (Google)<br> <i>"Machines see data — I teach them to understand meaning."</i> </p>
+
+
+
+
+
+## 🌐 Explore the Full Interactive Dashboard
+
+<p align="center">
+  <a href="SPACEX_DASHBOARD.html" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Launch_Full_Interactive_Dashboard-00ffc6?style=for-the-badge&logo=github&logoColor=000000&labelColor=0D1117" alt="View Dashboard" />
+  </a>
+</p>
+
+
+
+<h3>🛰️  Future Enhancements</h3>
+
+Incorporate real-time telemetry streaming.
+
+Apply Neural Networks for complex nonlinear prediction.
+
+Integrate weather & orbital parameters for richer features.
+
+Deploy the dashboard as a cloud-hosted AI service.
+
+
+
+
+<h2 align="center" style="color:#00ffc6;">💫 A Data-Driven Leap Toward Space Intelligence</h2> <p align="center"> <img src="https://cdn.dribbble.com/users/926537/screenshots/4502924/space_illustration.gif" width="60%" style="border-radius:12px; box-shadow:0 0 25px #00ffc6;"> </p>
+<p align="center" style="font-size:14px; color:#8B949E;"> ⭐ If you found this project inspiring — don’t forget to star the repository and share it with fellow space enthusiasts! </p> ```
+

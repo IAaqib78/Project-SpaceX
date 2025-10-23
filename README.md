@@ -195,7 +195,7 @@ Explore the key visualizations derived from SpaceX launch data. These dashboards
 
 
 
-<h3>🛰️  Future Enhancements</h3>
+<h3>  Future Enhancements</h3>
 
 Incorporate real-time telemetry streaming.
 
@@ -208,7 +208,7 @@ Deploy the dashboard as a cloud-hosted AI service.
 
 
 
-<h2 align="center" style="color:#00ffc6;">💫 A Data-Driven Leap Toward Space Intelligence</h2> <p align="center"> <img src="https://cdn.dribbble.com/users/926537/screenshots/4502924/space_illustration.gif" width="60%" style="border-radius:12px; box-shadow:0 0 25px #00ffc6;"> </p>
+<h2 align="center" style="color:#00ffc6;"> A Data-Driven Leap Toward Space Intelligence</h2> <p align="center"> <img src="https://cdn.dribbble.com/users/926537/screenshots/4502924/space_illustration.gif" width="60%" style="border-radius:12px; box-shadow:0 0 25px #00ffc6;"> </p>
 <p align="center" style="font-size:14px; color:#8B949E;"> ⭐ If you found this project inspiring — don’t forget to star the repository and share it with fellow space enthusiasts! </p> 
 
 
@@ -220,10 +220,15 @@ Deploy the dashboard as a cloud-hosted AI service.
 
 ## 🎥 Final Presentation
 
+<h4 align="center">|| Click Below ||</h4>
+
 <p align="center">
   <a href="SpaceX_Launch_Success_Prediction_Presentation.pdf" target="_blank">
     <img src="https://img.shields.io/badge/📊_View_Final_Presentation-00fff7?style=for-the-badge&logo=microsoftpowerpoint&logoColor=ff5c00&labelColor=0D1117" alt="View Presentation" />
   </a>
 </p>
 
+
+
 *This presentation summarizes the full technical workflow — from data collection and EDA to model building, evaluation, and insights — as developed for the IBM Data Science Capstone Project.*
+---

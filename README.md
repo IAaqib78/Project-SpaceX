@@ -8,8 +8,9 @@
 </h1>
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/SpaceX_Falcon_9_logo.svg" width="180" alt="SpaceX Falcon 9 Logo">
+  <img src="Picture1.png" alt="SpaceX Falcon 9 Launch" style="width:100%; max-width:1200px; height:auto; border-radius:12px; box-shadow:0 0 20px rgba(0,255,255,0.3);">
 </p>
+
 
 <p align="center">
   <b style="color:#00FFC6;">A Data-Driven AI Framework to Predict Falcon 9 Reusability</b><br>

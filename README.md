@@ -160,23 +160,30 @@ Visualization enhances interpretability — bridging science and story.
 
 Explore the key visualizations derived from SpaceX launch data. These dashboards summarize payload outcomes, launch site trends, and overall mission success probability.  
 
-### Payload Outcome Dashboard (0–16,000 kg)
-<p align="center">
-  <img src="dashboard_0_16000.png" alt="Payload Outcome 0-16000" width="80%" style="border-radius:10px; box-shadow:0 0 20px #00fff7;" />
-</p>
-*Insight:* Higher payload mass from Kennedy launch site correlates with higher probability of mission success.  
+<!-- 🌌 Payload Outcome Dashboard (0–16,000 kg) -->
+<h3 align="center" style="color:#00fff7;">Payload Outcome Dashboard (0–16,000 kg)</h3>
+<div align="center" style="background:linear-gradient(145deg,#0d1117,#111827); padding:20px; border-radius:14px;">
+  <img src="dashboard_0_16000.png" alt="Payload Outcome 0-16000" style="width:100%; max-width:1100px; height:auto; border-radius:10px; box-shadow:0 0 25px rgba(0,255,247,0.35);">
+</div>
+<p align="center"><em>Insight:</em> Higher payload mass from Kennedy launch site correlates with higher probability of mission success.</p>
 
-### SpaceX Launch Success Dashboard
-<p align="center">
-  <img src="images/spacex_launch_success_dashboard.png" alt="SpaceX Launch Success Dashboard" width="80%" style="border-radius:10px; box-shadow:0 0 20px #ff00ff;" />
-</p>
-*Insight:* LEO missions demonstrate the highest success rates, while Polar orbits show more variability.  
+---
 
-### Payload Outcome Dashboard (0–8,000 kg)
-<p align="center">
-  <img src="dashboard_0_8000.png" alt="Payload Outcome 0-8000" width="80%" style="border-radius:10px; box-shadow:0 0 20px #00fff7;" />
-</p>
-*Insight:* Low payload launches indicate marginal success probability; careful planning improves outcomes.  
+<!-- 🚀 SpaceX Launch Success Dashboard -->
+<h3 align="center" style="color:#ff00ff;">SpaceX Launch Success Dashboard</h3>
+<div align="center" style="background:linear-gradient(145deg,#0d1117,#111827); padding:20px; border-radius:14px;">
+  <img src="spacex_launch_success_dashboard.png" alt="SpaceX Launch Success Dashboard" style="width:100%; max-width:1100px; height:auto; border-radius:10px; box-shadow:0 0 25px rgba(255,0,255,0.35);">
+</div>
+<p align="center"><em>Insight:</em> LEO missions demonstrate the highest success rates, while Polar orbits show more variability.</p>
+
+---
+
+<!-- 🛰️ Payload Outcome Dashboard (0–8,000 kg) -->
+<h3 align="center" style="color:#00fff7;">Payload Outcome Dashboard (0–8,000 kg)</h3>
+<div align="center" style="background:linear-gradient(145deg,#0d1117,#111827); padding:20px; border-radius:14px;">
+  <img src="dashboard_0_8000.png" alt="Payload Outcome 0-8000" style="width:100%; max-width:1100px; height:auto; border-radius:10px; box-shadow:0 0 25px rgba(0,255,247,0.35);">
+</div>
+<p align="center"><em>Insight:</em> Low payload launches indicate marginal success probability; careful planning improves outcomes.</p>
 
 
 

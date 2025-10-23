@@ -162,7 +162,7 @@ Explore the key visualizations derived from SpaceX launch data. These dashboards
 
 ### Payload Outcome Dashboard (0–16,000 kg)
 <p align="center">
-  <img src="images/payload_outcome_dashboard_0_16000.png" alt="Payload Outcome 0-16000" width="80%" style="border-radius:10px; box-shadow:0 0 20px #00fff7;" />
+  <img src="dashboard_0_16000.png" alt="Payload Outcome 0-16000" width="80%" style="border-radius:10px; box-shadow:0 0 20px #00fff7;" />
 </p>
 *Insight:* Higher payload mass from Kennedy launch site correlates with higher probability of mission success.  
 
@@ -174,7 +174,7 @@ Explore the key visualizations derived from SpaceX launch data. These dashboards
 
 ### Payload Outcome Dashboard (0–8,000 kg)
 <p align="center">
-  <img src="images/payload_outcome_dashboard_0_8000.png" alt="Payload Outcome 0-8000" width="80%" style="border-radius:10px; box-shadow:0 0 20px #00fff7;" />
+  <img src="dashboard_0_8000.png" alt="Payload Outcome 0-8000" width="80%" style="border-radius:10px; box-shadow:0 0 20px #00fff7;" />
 </p>
 *Insight:* Low payload launches indicate marginal success probability; careful planning improves outcomes.  
 

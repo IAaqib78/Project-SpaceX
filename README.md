@@ -231,7 +231,7 @@ Deploy the dashboard as a cloud-hosted AI service.
 <h4 align="center">|| Click Below ||</h4>
 
 <p align="center">
-  <a href="SpaceX_Launch_Success_Prediction_Presentation.pdf" target="_blank">
+  <a href="SpaceX_capstone_final.pdf" target="_blank">
     <img src="https://img.shields.io/badge/📊_View_Final_Presentation-00fff7?style=for-the-badge&logo=microsoftpowerpoint&logoColor=ff5c00&labelColor=0D1117" alt="View Presentation" />
   </a>
 </p>

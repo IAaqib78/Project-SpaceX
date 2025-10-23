@@ -1,5 +1,5 @@
 <!-- =========================================================== -->
-<!-- 🚀 IBM Data Science Capstone: SpaceX Falcon 9 Landing Prediction -->
+<!--  IBM Data Science Capstone: SpaceX Falcon 9 Landing Prediction -->
 <!-- Enhanced Professional README -->
 <!-- =========================================================== -->
 
@@ -34,7 +34,7 @@ This project combines **real launch telemetry**, **API-sourced data**, and **mac
 
 ---
 
-## 🧩 Tech Stack
+##  Tech Stack
 
 | Domain | Tools |
 |:--|:--|
@@ -90,14 +90,14 @@ The SpaceX Launch Success Prediction project leveraged a combination of **data e
 ## 🧮 Core Algorithms
 
 ```python
-# 🚀 Falcon 9 Landing Prediction Core
+#  Falcon 9 Landing Prediction Core
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 
-# 🧠 Model Evaluation
+#  Model Evaluation
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 ```
@@ -134,13 +134,13 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 
 
 
-📈 High success rates observed for launches after 2018, correlating with iterative model improvements.
+ High success rates observed for launches after 2018, correlating with iterative model improvements.
 
-🛰️ Launch site and booster version were the strongest predictive features.
+ Launch site and booster version were the strongest predictive features.
 
-💸 Reusability models directly tied to SpaceX’s cost reduction strategy.
+ Reusability models directly tied to SpaceX’s cost reduction strategy.
 
-💡 **Key Takeaways**
+ **Key Takeaways**
 
 
 Data analytics plays a strategic role in aerospace economics.
@@ -210,3 +210,20 @@ Deploy the dashboard as a cloud-hosted AI service.
 
 <h2 align="center" style="color:#00ffc6;">💫 A Data-Driven Leap Toward Space Intelligence</h2> <p align="center"> <img src="https://cdn.dribbble.com/users/926537/screenshots/4502924/space_illustration.gif" width="60%" style="border-radius:12px; box-shadow:0 0 25px #00ffc6;"> </p>
 <p align="center" style="font-size:14px; color:#8B949E;"> ⭐ If you found this project inspiring — don’t forget to star the repository and share it with fellow space enthusiasts! </p> 
+
+
+
+
+
+
+---
+
+## 🎥 Final Presentation
+
+<p align="center">
+  <a href="SpaceX_Launch_Success_Prediction_Presentation.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/📊_View_Final_Presentation-00fff7?style=for-the-badge&logo=microsoftpowerpoint&logoColor=ff5c00&labelColor=0D1117" alt="View Presentation" />
+  </a>
+</p>
+
+*This presentation summarizes the full technical workflow — from data collection and EDA to model building, evaluation, and insights — as developed for the IBM Data Science Capstone Project.*

@@ -190,8 +190,8 @@ Explore the key visualizations derived from SpaceX launch data. These dashboards
 
 
 
-
-🧑‍🚀 Author
+ <h4 align="center"> |  Author  | </h4>
+ 
 <h3 align="center" style="color:#00E5FF;">👨‍🚀 Aakif Altaf</h3> <p align="center"> <b>Data Scientist | AI Innovator | IBM & Google Certified</b><br> BCA | MCA | Data Science (IBM) | Data Analytics (Google)<br> <i>"Machines see data — I teach them to understand meaning."</i> </p>
 
 

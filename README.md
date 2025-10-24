@@ -88,42 +88,185 @@ The SpaceX Launch Success Prediction project leveraged a combination of **data e
 
 
 
-## 🧮 Core Algorithms
-
-```python
-#  Falcon 9 Landing Prediction Core
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-
-#  Model Evaluation
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-
-```
 
 
-| Model               | Accuracy | Notes                      |
-| :------------------ | :------: | :------------------------- |
-| Logistic Regression |    83%   | Baseline Model             |
-| Decision Tree       |    88%   | Best overall performer     |
-| SVM                 |    85%   | Margin-based classifier    |
-| KNN                 |    86%   | Strong under optimized k=3 |
+
+
+<h2 align="center">🧮 Core Algorithms</h2>
+
+<table align="center">
+  <tr>
+    <th align="center" width="180" style="background-color:#1a1a1a;color:#00e6b8;">Algorithm</th>
+    <th align="center" style="background-color:#1a1a1a;color:#00e6b8;">Purpose & Description</th>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" width="45"/><br><b>Logistic Regression</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Provides a probabilistic model for binary classification of Falcon 9 landing outcomes, helping assess success likelihood based on input features.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;">
+      <img src="https://cdn-icons-png.flaticon.com/512/188/188987.png" width="45"/><br><b>Decision Tree</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Captures non-linear relationships and feature interactions. Visualizes decision paths that influence successful landings.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" width="45"/><br><b>Support Vector Classifier (SVC)</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Maximizes separation between classes in high-dimensional space. Ideal for cases where landing outcomes are not linearly separable.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;">
+      <img src="https://cdn-icons-png.flaticon.com/512/1085/1085981.png" width="45"/><br><b>K-Nearest Neighbors (KNN)</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Uses proximity-based classification to predict outcomes by comparing similar historical launches. Simple yet effective for pattern recognition.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3126/3126619.png" width="45"/><br><b>Model Evaluation</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Metrics like <b>accuracy, confusion matrix, and classification reports</b> quantify model performance and identify misclassifications for improvement.
+    </td>
+  </tr>
+</table>
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+<h2 align="center"> Model Performance</h2>
+
+<table align="center">
+  <tr>
+    <th align="center" width="180" style="background-color:#1a1a1a;color:#00e6b8;">Model</th>
+    <th align="center" style="background-color:#1a1a1a;color:#00e6b8;">Accuracy</th>
+    <th align="center" style="background-color:#1a1a1a;color:#00e6b8;">Notes</th>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;"><b>Logistic Regression</b></td>
+    <td align="center" style="background-color:#0d1117;color:#00e6b8;"><b>83%</b></td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">Baseline model; provides a simple probabilistic benchmark for landing prediction.</td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;"><b>Decision Tree</b></td>
+    <td align="center" style="background-color:#0d1117;color:#00e6b8;"><b>88%</b></td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">Best overall performer; captures non-linear relationships and feature interactions effectively.</td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;"><b>Support Vector Machine (SVM)</b></td>
+    <td align="center" style="background-color:#0d1117;color:#00e6b8;"><b>85%</b></td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">Margin-based classifier; strong in separating non-linear landing outcome classes.</td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;"><b>K-Nearest Neighbors (KNN)</b></td>
+    <td align="center" style="background-color:#0d1117;color:#00e6b8;"><b>86%</b></td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">Performs well with optimized k=3; leverages similarity between past launches for prediction.</td>
+  </tr>
+</table>
+
+
+
+
+
 
 
 
 <p align="center"> <img src="https://cdn.dribbble.com/users/1615584/screenshots/14318150/media/0f7b80a6db36f545a4273cf6b8b723f9.gif" width="85%"> </p>
 
 
-| Phase                   | Description                                                                                 |
-| :---------------------- | :------------------------------------------------------------------------------------------ |
-| **1️⃣ Data Collection** | Fetched launch data using SpaceX REST API and scraped Wikipedia for additional attributes.  |
-| **2️⃣ Data Cleaning**   | Preprocessed missing data, handled categorical encoding, and refined features for training. |
-| **3️⃣ EDA**             | Visualized launch success trends using Matplotlib, Seaborn, and Correlation Heatmaps.       |
-| **4️⃣ Mapping**         | Created **Folium-based interactive maps** showing launch site success patterns.             |
-| **5️⃣ Model Training**  | Applied Logistic Regression, Decision Tree, KNN, and SVM models.                            |
-| **6️⃣ Dashboard**       | Built an **interactive Plotly Dash dashboard** for user exploration and visualization.      |
+<h2 align="center"> Project Methodology</h2>
+
+<table align="center">
+  <tr>
+    <th align="center" width="180" style="background-color:#1a1a1a;color:#00e6b8;">Phase</th>
+    <th align="center" style="background-color:#1a1a1a;color:#00e6b8;">Description</th>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" width="45"/><br><b>1️⃣ Data Collection</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Fetched launch data using the <b>SpaceX REST API</b> and scraped <b>Wikipedia</b> for supplementary attributes, ensuring a comprehensive dataset.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" width="45"/><br><b>2️⃣ Data Cleaning</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Preprocessed missing values, handled categorical encoding, and refined features for robust model training.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;">
+      <img src="https://cdn-icons-png.flaticon.com/512/8832/8832682.png" width="45"/><br><b>3️⃣ EDA</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Visualized launch success trends using <b>Matplotlib</b>, <b>Seaborn</b>, and correlation heatmaps to uncover patterns.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" width="45"/><br><b>4️⃣ Mapping</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Created <b>interactive Folium maps</b> to illustrate launch site performance and regional success patterns.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2103/2103606.png" width="45"/><br><b>5️⃣ Model Training</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Applied <b>Logistic Regression</b>, <b>Decision Tree</b>, <b>KNN</b>, and <b>SVM</b> models to predict Falcon 9 landing success.
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="background-color:#0d1117;color:#e6e6e6;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="45"/><br><b>6️⃣ Dashboard</b>
+    </td>
+    <td style="background-color:#0d1117;color:#e6e6e6;">
+      Built an <b>interactive Plotly Dash dashboard</b> for dynamic exploration and visualization of launch success trends.
+    </td>
+  </tr>
+</table>
 
 
 
@@ -131,24 +274,29 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
  
 
 
-**Visual Insights**
+<h2 align="center">🌌 Visual Insights & Strategic Takeaways</h2>
+
+<table align="center" style="max-width:900px;">
+  <tr>
+    <th align="center" width="250" style="background-color:#0f111a;color:#00ffe6;font-size:18px;"> Visual Insights</th>
+    <th align="center" style="background-color:#0f111a;color:#00ffe6;font-size:18px;"> Strategic Takeaways</th>
+  </tr>
+
+  <tr>
+    <td style="background-color:#111420;color:#e6e6e6;padding:15px;line-height:1.6;">
+      <b> Launch Performance Trends:</b> Falcon 9 success rates surged post-2018, reflecting SpaceX’s iterative engineering improvements and operational optimizations.<br><br>
+      <b> Key Predictive Features:</b> Launch site selection and booster version consistently emerge as the strongest indicators of landing success.<br><br>
+      <b> Reusability Impact:</b> Data shows a direct correlation between booster reusability models and SpaceX’s cost reduction strategy.
+    </td>
+    <td style="background-color:#111420;color:#e6e6e6;padding:15px;line-height:1.6;">
+      <b> Analytics as Strategy:</b> Data-driven insights now guide aerospace economics and resource allocation decisions.<br><br>
+      <b> Predictive Reliability:</b> Machine learning models enhance operational planning and boost confidence in reusable launch systems.<br><br>
+      <b> Storytelling Through Visualization:</b> Interactive and visual outputs bridge complex science with strategic narratives, making insights actionable.
+    </td>
+  </tr>
+</table>
 
 
-
- High success rates observed for launches after 2018, correlating with iterative model improvements.
-
- Launch site and booster version were the strongest predictive features.
-
- Reusability models directly tied to SpaceX’s cost reduction strategy.
-
- **Key Takeaways**
-
-
-Data analytics plays a strategic role in aerospace economics.
-
-Machine learning provides predictive reliability for reusability planning.
-
-Visualization enhances interpretability — bridging science and story.
 
 
 
@@ -190,28 +338,77 @@ Explore the key visualizations derived from SpaceX launch data. These dashboards
 
 
 
+
+---
+
+
+
+<h2 align="center"> Future Enhancements</h2>
+
+<table align="center" style="max-width:800px;">
+  <tr>
+    <th align="center" width="220" style="background-color:#0f111a;color:#00ffe6;font-size:18px;">Enhancement</th>
+    <th align="center" style="background-color:#0f111a;color:#00ffe6;font-size:18px;">Description</th>
+  </tr>
+
+  <tr>
+    <td align="center" style="background-color:#111420;color:#e6e6e6;padding:15px;">
+      <b>📡 Real-Time Telemetry</b>
+    </td>
+    <td style="background-color:#111420;color:#e6e6e6;padding:15px;line-height:1.6;">
+      Incorporate streaming telemetry data to enable instant predictions and adaptive modeling for ongoing launches.
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" style="background-color:#111420;color:#e6e6e6;padding:15px;">
+      <b>🧠 Neural Networks</b>
+    </td>
+    <td style="background-color:#111420;color:#e6e6e6;padding:15px;line-height:1.6;">
+      Leverage deep learning to capture complex, nonlinear relationships between launch parameters and landing outcomes for higher accuracy.
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" style="background-color:#111420;color:#e6e6e6;padding:15px;">
+      <b>🌦️ Weather & Orbital Data</b>
+    </td>
+    <td style="background-color:#111420;color:#e6e6e6;padding:15px;line-height:1.6;">
+      Integrate environmental and orbital conditions as features, enhancing model context and predictive capability.
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" style="background-color:#111420;color:#e6e6e6;padding:15px;">
+      <b>☁️ Cloud-Hosted Dashboard</b>
+    </td>
+    <td style="background-color:#111420;color:#e6e6e6;padding:15px;line-height:1.6;">
+      Deploy the interactive Plotly Dash dashboard as a cloud-based AI service for real-time insights and global accessibility.
+    </td>
+  </tr>
+</table>
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <h4 align="center"> |  Author  | </h4>
  
 <h3 align="center" style="color:#00E5FF;">👨‍🚀 Aakif Altaf</h3> <p align="center"> <b>Data Scientist | AI Innovator | IBM & Google Certified</b><br> BCA | MCA | Data Science (IBM) | Data Analytics (Google)<br> <i>"Machines see data — I teach them to understand meaning."</i> </p>
 
-
-
-
-
- 
-
-
-
-
-<h3>  Future Enhancements</h3>
-
-Incorporate real-time telemetry streaming.
-
-Apply Neural Networks for complex nonlinear prediction.
-
-Integrate weather & orbital parameters for richer features.
-
-Deploy the dashboard as a cloud-hosted AI service.
 
 
 
